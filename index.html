@@ -11,12 +11,12 @@
   --paper: #f3efe5;
   --acid: #d8ff3e;
   --line: #11100f35;
-  --title-font: Helvetica;
-  --body-font: Helvetica;
+  --title-font: Inter;
+  --body-font: Inter;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 76px; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: Helvetica; font-weight: 300; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Inter; font-weight: 400; }
 a { color: inherit; text-decoration: none; }
 button { font: inherit; }
 ::selection { background: var(--acid); color: var(--ink); }
@@ -28,7 +28,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f05a38; outline-offs
 .translated { transition: opacity .3s cubic-bezier(.22, 1, .36, 1); }
 .language-changing .translated { opacity: 0; }
 .cover { min-height: calc(100svh - 76px); padding: clamp(3rem,8vh,7rem) 4vw 2rem; display: flex; flex-direction: column; }
-.cover h1 { margin: auto 0; padding: 0 0 5rem; font-family: Helvetica; font-size: clamp(2rem,9.5vw,10.4rem); font-weight: 400; line-height: .96; letter-spacing: -.055em; }
+.cover h1 { margin: auto 0; padding: 0 0 5rem; font-family: Inter; font-size: clamp(2rem,9.5vw,10.4rem); font-weight: 400; line-height: .96; letter-spacing: -.055em; }
 .cover h1 span { display: block; }
 .cover h1 span:last-child { color: transparent; -webkit-text-stroke: 1.5px var(--ink); }
 .cover-credits { display: grid; grid-template-columns: 1fr 1.25fr; gap: 8vw; align-items: start; }
@@ -72,7 +72,7 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f05a38; outline-offs
 .return-link { display: inline-block; padding: 1rem 0; margin-top: 2rem; border-bottom: 1px solid; font-size: 1rem; }
 .author-links { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 
-/Unified typography: Helvetica/
+/Unified typography: Inter/
 html, body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, blockquote, cite, span, label {
   font-family: var(--body-font);
 }
@@ -81,15 +81,15 @@ html, body, button, input, textarea, select, a, p, h1, h2, h3, h4, h5, h6, block
 }
 
 
-/* Force Helvetica Neue across every text element, including author sheets and quotes */
+/* Force Inter across every text element, including author sheets and quotes */
 body, body *,
 .reading-sheet, .reading-sheet *,
 .author-page, .author-page *,
 .bibliography, .bibliography *,
 blockquote, blockquote *,
 button, input, textarea, select {
-  font-family: Helvetica !important;
-  font-weight: 300 !important;
+  font-family: Inter !important;
+  font-weight: 400 !important;
 }
 
 @media (min-width: 1600px) { .cover h1 { font-size: 10.4rem; } }
