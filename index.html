@@ -72,20 +72,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f05a38; outline-offs
 .bibliography p { padding-left: 1.5rem; text-indent: -1.5rem; font-size: 1rem; line-height: 1.8; }
 .return-link { display: inline-block; padding: 1rem 0; margin-top: 2rem; border-bottom: 1px solid; font-size: 1rem; }
 .author-links { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-.editor-page { max-width: 1240px; margin: auto; padding: 0 4vw 5rem; }
-.editor-toolbar { min-height: 84px; position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--paper) 94%, transparent); backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.editor-actions { display: flex; align-items: center; gap: .75rem; }
-.save-button:disabled { opacity: .55; cursor: wait; }
-.editor-heading { padding-top: 3rem; }
-.editor-help { max-width: 680px; line-height: 1.6; margin: 1.5rem 0 0; }
-.save-status { min-height: 1.5rem; font-weight: 700; }
-.save-status.saved { color: #276620; }
-.save-status.error { color: #a3261b; }
-.editing-sheet [contenteditable="true"] { cursor: text; border-radius: 4px; transition: background .2s, outline .2s; }
-.editing-sheet [contenteditable="true"]:hover { background: color-mix(in srgb, var(--accent) 10%, transparent); }
-.editing-sheet [contenteditable="true"]:focus { outline: 2px solid var(--accent); outline-offset: 7px; background: color-mix(in srgb, var(--accent) 8%, white); }
-.editor-footer-actions { display: flex; align-items: center; gap: 1.2rem; margin: 2rem 0; }
-.editor-footer-actions a { text-decoration: underline; text-underline-offset: 4px; }
 @media (min-width: 1600px) { .cover h1 { font-size: 10.4rem; } }
 /* Preserve the radial map and its SVG threads in portrait view. */
 @media (max-width: 800px) {
@@ -123,12 +109,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f05a38; outline-offs
   .bibliography p { padding-left: 1rem; text-indent: -1rem; }
   .return-link { min-height: 44px; }
   .author-links { align-items: flex-end; }
-  .editor-page { padding: 0 1rem 3rem; }
-  .editor-toolbar { min-height: auto; padding: .6rem 0; align-items: flex-start; }
-  .editor-actions { align-items: stretch; flex-direction: column; }
-  .editor-toolbar .back-link { max-width: 7.5rem; }
-  .editor-heading { padding-top: 2rem; }
-  .editor-footer-actions { align-items: flex-start; flex-direction: column; }
 }
 @media (max-width: 380px) {
   .topbar { gap: .5rem; padding-left: .75rem; padding-right: .75rem; }
@@ -158,7 +138,6 @@ a:focus-visible, button:focus-visible { outline: 3px solid #f05a38; outline-offs
 
 [hidden]{display:none!important}.standalone-view{min-height:calc(100svh - 76px)}
 .site{min-height:100svh}.topbar .back-link:empty{visibility:hidden}.edit-link{cursor:pointer}
-.editor-help code{font-family:ui-monospace,monospace}.standalone-note{font-size:.9rem;opacity:.72}
 @media(max-width:800px){.standalone-view{min-height:calc(100svh - 72px)}}
 </style>
 </head>
